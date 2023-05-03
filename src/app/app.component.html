@@ -1,8 +1,18 @@
 <div class="main-container">
 
   <nav class="menu">
-    <div class="title" ><a [routerLink]="['home']">Sangavi Shanthakumar</a></div>
-    <div>
+    <div class="title">
+      <a [routerLink]="['home']">Sangavi Shanthakumar</a>
+    </div>
+
+    <div class="toggle-button">
+      <button  (click)="toggleMenu()"  mat-icon-button color="accent" >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+
+    <div [class.active]="showMenu" class="menu-links">
     <ul>
       <li [routerLinkActive]="'active'"><a [routerLink]="['home']"> Home </a></li>
       <li [routerLinkActive]="'active'"><a [routerLink]="['aboutme']"> About me </a></li>
@@ -21,4 +31,5 @@
     <app-contact></app-contact>-->
 <router-outlet></router-outlet>
   </div>
+
 </div>

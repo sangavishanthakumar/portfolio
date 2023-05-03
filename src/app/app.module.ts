@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {ElementRef, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule, Routes} from "@angular/router";
 
@@ -9,6 +9,10 @@ import { SkillsetComponent } from './skillset/skillset.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+
 
 
 const appRoute: Routes = [
@@ -21,6 +25,7 @@ const appRoute: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent } /* always last */
 ];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,11 +36,16 @@ const appRoute: Routes = [
     ContactComponent,
     ErrorComponent
   ],
-    imports: [
-        BrowserModule,
-      RouterModule.forRoot(appRoute)
-    ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoute),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

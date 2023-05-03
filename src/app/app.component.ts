@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  showMenu: boolean | undefined;
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 }

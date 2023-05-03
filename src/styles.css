@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", serif;
+  /*margin: 0.2rem;*/
 }
 
 body{
@@ -9,7 +10,8 @@ body{
 }
 
 .active{
-  background-color: bisque;
+
+  /*background-color: gainsboro;*/
 }
 .title{
   font-size: 1.5em;
@@ -21,50 +23,116 @@ body{
   color: black;
 }
 
-/* navbar source: https://berkearas.de */
+.title a:hover{
+  color: thistle;
+  transition: all .2s;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  align-items: center;
+
+  /*height: 50px;
   width: 100%;
   text-align: center;
   z-index: 50;
-  box-shadow: none;
+  box-shadow: none;*/
 /*background-color: gainsboro;*/
-  transition: border-bottom .5s;
+  /*transition: border-bottom .5s;*/
 }
 
-.menu ul {
+.menu-links ul {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  height: 50px;
-
-  width: fit-content;
+  /*width: fit-content;*/
  /* border-top: 1.3px solid #DBDBDB;
   border-bottom: 1.3px solid #DBDBDB;*/
   display: flex;
 }
 
-menu ul li {
+.menu-links ul li {
   float: left;
   text-align: center;
 
 }
 
-.menu ul li a{
+.menu-links ul li a{
 
-  display: inline-block;
+  display: block;
   text-align: center;
   text-decoration: none;
   color: black;
   font-size: 17px;
   font-weight: 600;
-  font-family: "Avenir Next" ;
+  font-family: "Avenir Next", serif ;
   line-height: 50px;
   margin: 0 10px;
 
   transition: all .2s;
   cursor: pointer;
 }
+
+.menu-links ul li a:hover{
+  color: thistle;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+/*.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: pink;
+  border-radius: 10px;
+}*/
+
+@media (max-width: 400px) {
+  .toggle-button {
+    display: flex;
+  }
+  .toggle-button:hover{
+    cursor: pointer;
+    color: thistle;
+  }
+
+ .menu-links{
+   display: none;
+   width: 100%;
+ }
+
+ .menu{
+   flex-direction: column;
+   align-items: flex-start;
+
+ }
+
+ .menu-links ul{
+   width: 100%;
+   flex-direction: column;
+   background-color: #f7f2f7;
+ }
+
+ .menu-links li{
+   text-align: center;
+ }
+
+  .menu-links.active{
+    display: flex;
+
+  }
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
