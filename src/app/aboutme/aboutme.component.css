@@ -1,0 +1,11 @@
+h1{
+  /* center this element*/
+  text-align: center;
+  font-size: 2em;
+}
+p{
+  font-size: 1.2em;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 50px;
+}
