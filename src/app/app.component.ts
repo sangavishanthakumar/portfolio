@@ -12,4 +12,11 @@ export class AppComponent {
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
+
+  scrollTo(element: string): void {
+    const el = document.querySelector(element);
+    // @ts-ignore
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }

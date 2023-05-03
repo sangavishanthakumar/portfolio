@@ -17,13 +17,13 @@ import {MatIconModule} from "@angular/material/icon";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'skillset', component: SkillsetComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', component: ErrorComponent } /* always last */
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: ErrorComponent }, /* always last */
 ];
 
 @NgModule({

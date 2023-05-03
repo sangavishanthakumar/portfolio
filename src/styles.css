@@ -34,13 +34,7 @@ body{
   justify-content: space-between;
   align-items: center;
 
-  /*height: 50px;
-  width: 100%;
-  text-align: center;
-  z-index: 50;
-  box-shadow: none;*/
-/*background-color: gainsboro;*/
-  /*transition: border-bottom .5s;*/
+
 }
 
 .menu-links ul {
@@ -51,6 +45,7 @@ body{
  /* border-top: 1.3px solid #DBDBDB;
   border-bottom: 1.3px solid #DBDBDB;*/
   display: flex;
+
 }
 
 .menu-links ul li {
