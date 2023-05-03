@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
-  font-family: "Avenir Next", serif;
+  /*font-family: "Avenir Next", serif;*/
+  font-family: monospace, sans-serif;
   /*margin: 0.2rem;*/
 }
 
@@ -66,7 +67,6 @@ body{
   color: black;
   font-size: 17px;
   font-weight: 600;
-  font-family: "Avenir Next", serif ;
   line-height: 50px;
   margin: 0 10px;
 
