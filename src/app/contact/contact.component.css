@@ -1,0 +1,20 @@
+h1{
+  /* center this element*/
+  text-align: center;
+  font-size: 2em;
+  margin-top: 150px;
+}
+p{
+  font-size: 1.2em;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 50px;
+}
+.l{
+  list-style-type: none;
+}
+
+.l a {
+text-decoration: none;
+
+}
