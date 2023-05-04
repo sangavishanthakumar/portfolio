@@ -23,7 +23,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/netlify.toml"
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              }
+
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
