@@ -8,14 +8,14 @@ p{
   margin-left: 400px;
   margin-right: 400px;
   margin-top: 50px;
+  ;
 }
 
 .icon-bar ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0 0;
 }
 
 .icon-bar li {
