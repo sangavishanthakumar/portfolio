@@ -9,12 +9,16 @@ p{
   margin-left: 400px;
   margin-right: 400px;
   margin-top: 50px;
-}
-.l{
-  list-style-type: none;
+  text-align: center;
 }
 
-.l a {
+a {
 text-decoration: none;
+color: inherit;
+}
 
+a:hover{
+  color: thistle;
+  /*transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;*/
 }
