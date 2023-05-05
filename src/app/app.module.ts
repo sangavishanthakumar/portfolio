@@ -15,6 +15,7 @@ import {MatIconModule} from "@angular/material/icon";
 
 
 
+
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
   { path: 'home', component: HomeComponent },
