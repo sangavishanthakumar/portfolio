@@ -1,21 +1,24 @@
 /* typing animation src: https://codepen.io/denic/pen/GRoOxbM */
 .wrapper {
   height: 100vh;
-  /*This part is important for centering*/
   display: grid;
   place-items: center;
 }
 
 .typing-animation {
-  width: 50ch;
+  width: 80%;
+  max-width: 50ch;
   animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: calc(1em + 1vw); /* Use responsive units for font size */
+  line-height: calc(1.2em + 1vw); /* Use responsive units for line height */
   padding: 20px;
+
 }
+
 
 @keyframes typing {
   from {
@@ -25,6 +28,23 @@
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
+
+@media (max-width: 820px) {
+  .typing-animation {
+    width: 80%;
+    max-width: 60ch;
+    animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: auto;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: calc(1em + 1vw);
+    line-height: calc(1.2em + 1vw);
+    padding: 20px;
+
+  }
+}
+
