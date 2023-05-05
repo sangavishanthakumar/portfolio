@@ -35,3 +35,23 @@ p{
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
 }
+
+/*.image{
+  width: 25%;
+  height: 100%;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}*/
+
+img{
+  margin: auto;
+  display: block;
+  width: 15%;
+  height: 50%;
+  border-radius: 50%;
+  /*border: 1px solid white;*/
+  /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+}
+
