@@ -154,6 +154,7 @@ a img:hover {
   .container{
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 50px;
+    display: block;
 
   }
 }
