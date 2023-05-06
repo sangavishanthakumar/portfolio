@@ -2,7 +2,7 @@ h1{
   /* center this element*/
   text-align: center;
   font-size: 2em;
-  margin-top: 150px;
+  margin-top: 17%;
 }
 p{
   font-size: 1.2em;
@@ -15,10 +15,9 @@ p{
 a {
 text-decoration: none;
 color: inherit;
+  transition: all .2s;
 }
 
 a:hover{
   color: thistle;
-  /*transform: scale(1.2);
-  transition: transform 0.2s ease-in-out;*/
 }

@@ -12,6 +12,7 @@ import { ErrorComponent } from './error/error.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {NgOptimizedImage} from "@angular/common";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
@@ -39,7 +40,8 @@ const appRoute: Routes = [
     RouterModule.forRoot(appRoute),
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
