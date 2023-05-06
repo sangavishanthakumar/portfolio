@@ -1,5 +1,5 @@
 # Portfolio
-This is my repo for my portfolio webpage. Check it out at https://sangavishanthakumar.netlify.app/home !
+This is my repo for my portfolio webpage. Check it out at https://sangavishanthakumar.netlify.app/ !
 
 
 ## Angular
