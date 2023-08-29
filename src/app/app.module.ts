@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {NgOptimizedImage} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
@@ -33,16 +34,17 @@ const appRoute: Routes = [
     SkillsetComponent,
     ProjectsComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoute),
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatIconModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(appRoute),
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatIconModule,
+        NgOptimizedImage,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
