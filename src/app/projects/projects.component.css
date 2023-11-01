@@ -1,5 +1,22 @@
+h1 {
+  font-family: monospace, sans-serif;
+}
+.header{
+  text-align: center;
+  padding-top: 1rem;
+  position: relative;
+}
 
-
+.header:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  /*background-color: thistle;*/
+}
 /* set image size for web view*/
 img {
   width: 50vh;
@@ -127,6 +144,7 @@ a:hover{
 h2 {
   margin: 0;
   padding: 0 0 10px 0;
+  font-family: monospace, sans-serif;
 }
 
 p {
@@ -158,6 +176,7 @@ p {
   h2 {
     margin: 0;
     padding: 0 0 10px 0;
+    font-family: monospace, sans-serif;
   }
 
   p {
