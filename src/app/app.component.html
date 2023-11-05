@@ -11,6 +11,13 @@
       </button>
     </div>
 
+    <div class="language-buttons">
+      <button (click)="switchLanguage('en')">English</button>
+      <button (click)="switchLanguage('de')">Deutsch</button>
+      <button (click)="switchLanguage('zh')">汉语</button>
+    </div>
+
+
 
     <div [class.active]="showMenu" class="menu-links">
     <ul>

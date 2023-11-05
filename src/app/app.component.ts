@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,14 @@ export class AppComponent {
     const el = document.querySelector(element);
     // @ts-ignore
     el.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('de');
+  }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
   }
 
 }
