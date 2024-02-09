@@ -2,24 +2,24 @@
 
   <nav class="menu">
     <div class="title">
-      <a [routerLink]="['home']">Sangavi Shanthakumar</a>
+      <a [routerLink]="['/home']">Sangavi Shanthakumar</a>
     </div>
 
     <div class="toggle-button">
-      <button  (click)="toggleMenu()"  mat-icon-button >
+      <button (click)="toggleMenu()" mat-icon-button>
         <mat-icon class="icon-color">menu</mat-icon>
       </button>
     </div>
 
-
     <div [class.active]="showMenu" class="menu-links">
-    <ul>
-      <li (click)="scrollTo('#home')" [routerLinkActive]="'active'"><a [routerLink]="['home']"> Home </a></li>
-      <li  (click)="scrollTo('#aboutme')" [routerLinkActive]="'active'"><a [routerLink]="['aboutme']"> About me </a></li>
-      <li  (click)="scrollTo('#skillset')" [routerLinkActive]="'active'"><a [routerLink]="['skillset']"> Skill set </a></li>
-      <li (click)="scrollTo('#projects')" [routerLinkActive]="'active'"><a [routerLink]="['projects']"> Projects </a></li>
-      <li (click)="scrollTo('#contact')" [routerLinkActive]="'active'"><a [routerLink]="['contact']"> Contact </a></li>
-    </ul>
+      <ul>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/']">Home</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/aboutme']">About me</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/skillset']">Skill set</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/projects']">Projects</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/contact']">Contact</a></li>
+
+      </ul>
     </div>
   </nav>
 
@@ -32,4 +32,3 @@
   </div>
 
 </div>
-
