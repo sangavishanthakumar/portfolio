@@ -22,7 +22,7 @@ const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
   { path: 'home', component: HomeComponent },
   { path: 'aboutme', component: AboutmeComponent },
-  { path: 'skillset', component: SkillsetComponent },
+  { path: 'cv', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }, /* always last */
@@ -36,6 +36,7 @@ const appRoute: Routes = [
     SkillsetComponent,
     ProjectsComponent,
     ErrorComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +49,8 @@ const appRoute: Routes = [
     FooterComponent,
     MasterComponent,
     BachelorComponent,
-    ExperienceComponent
+    ExperienceComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

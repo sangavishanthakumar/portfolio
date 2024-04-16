@@ -15,10 +15,10 @@
       <ul>
         <li [routerLinkActive]="'active'"><a [routerLink]="['/']">Home</a></li>
         <li [routerLinkActive]="'active'"><a [routerLink]="['/aboutme']">About me</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/experience']">Experience</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/cv']">Curriculum Vitae</a></li>
         <li [routerLinkActive]="'active'"><a [routerLink]="['/projects']">Projects</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/master']">Master</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/bachelor']">Bachelor</a></li>
+<!--        <li [routerLinkActive]="'active'"><a [routerLink]="['/master']">Master</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="['/bachelor']">Bachelor</a></li>-->
       </ul>
     </div>
   </nav>
@@ -26,10 +26,10 @@
   <div class="component-container">
     <app-home id="home"></app-home>
     <app-aboutme id="aboutme"></app-aboutme>
-    <app-experience id="experience"></app-experience>
+    <app-experience id="cv"></app-experience>
     <app-projects id="projects"></app-projects>
-    <app-master id="master"></app-master>
-    <app-bachelor id="bachelor"></app-bachelor>
+<!--    <app-master id="master"></app-master>
+    <app-bachelor id="bachelor"></app-bachelor>-->
   </div>
   <app-footer></app-footer>
 </div>
