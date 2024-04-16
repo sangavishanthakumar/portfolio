@@ -26,7 +26,7 @@ h1 {
 }
 /* set image size for web view*/
 img {
-  width: 50vh;
+  width: 30vh;
   object-fit: cover;
   margin: auto;
 }
@@ -110,7 +110,7 @@ input[type="number"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 5%;
 }
 
 a {
@@ -126,7 +126,7 @@ a:hover{
 .block {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 46%;
   background-color: #f2f2f2;
   padding: 2%;
   border-radius: 15px;
