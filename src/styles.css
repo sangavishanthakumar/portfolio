@@ -1,33 +1,40 @@
 
-*{
+* {
   box-sizing: border-box;
   font-family: monospace, sans-serif;
   margin: 0.2rem;
 }
 
-html, body { height: 100%; }
-body{
-  padding: 0 ;
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
   font-family: monospace, sans-serif;
 }
-h1{
+
+h1 {
   text-align: center;
   font-size: 2em;
+  margin: 5vh;
 }
-.active{
+
+.active {
 
 }
-.title{
+
+.title {
   font-size: 1.5em;
   margin: 0.5em;
 }
 
-.title a{
+.title a {
   text-decoration: none;
   color: black;
 }
 
-.title a:hover{
+.title a:hover {
   color: thistle;
   transition: all .2s;
 }
@@ -36,7 +43,7 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*position: fixed;*/
+  /*position: fixed;*/
 
 }
 
@@ -54,7 +61,7 @@ h1{
 
 }
 
-.menu-links ul li a{
+.menu-links ul li a {
 
   display: block;
   text-align: center;
@@ -69,7 +76,7 @@ h1{
   cursor: pointer;
 }
 
-.menu-links ul li a:hover{
+.menu-links ul li a:hover {
   color: thistle;
 }
 
@@ -96,39 +103,40 @@ h1{
   .toggle-button {
     display: flex;
   }
-  .toggle-button:hover{
+
+  .toggle-button:hover {
     cursor: pointer;
     color: thistle;
   }
 
- .menu-links{
-   display: none;
-   width: 100%;
- }
+  .menu-links {
+    display: none;
+    width: 100%;
+  }
 
- .menu{
-   flex-direction: column;
-   align-items: flex-start;
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
 
- }
+  }
 
- .menu-links ul{
-   width: 100%;
-   flex-direction: column;
-   background-color: #f7f2f7;
- }
+  .menu-links ul {
+    width: 100%;
+    flex-direction: column;
+    background-color: #f7f2f7;
+  }
 
- .menu-links li{
-   text-align: center;
- }
+  .menu-links li {
+    text-align: center;
+  }
 
-  .menu-links.active{
+  .menu-links.active {
     display: flex;
 
   }
 
-  .icon-color{
-color: black;
+  .icon-color {
+    color: black;
   }
 
 
