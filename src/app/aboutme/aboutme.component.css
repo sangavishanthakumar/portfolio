@@ -7,8 +7,20 @@ a{
 a:hover{
   color: thistle;
 }
+.aboutmetext {
+  width: 50%;
+  margin: 0 auto;
+ /* text-align: center;*/
+  margin-bottom: 50vh;
+}
 
-
+h1{
+  /* center this element*/
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5vh;
+  font-family: monospace, sans-serif;
+}
 
 p{
   font-size: 1.2em;
@@ -50,38 +62,5 @@ img{
   border-radius: 50%;
   /*border: 1px solid white;*/
   /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
-}
-
-.about-section {
-  display: grid;
-  place-items: center;
-  margin-top: 5vh;
-
-}
-
-.wrapper {
-  height: 100vh;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
-  gap: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-.image img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.about-text p {
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0 1em;
 }
 

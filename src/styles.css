@@ -14,10 +14,13 @@ body {
   font-family: monospace, sans-serif;
 }
 
-h1 {
+h1{
+  /* center this element*/
   text-align: center;
   font-size: 2em;
-  margin: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-family: monospace, sans-serif;
 }
 
 .active {
