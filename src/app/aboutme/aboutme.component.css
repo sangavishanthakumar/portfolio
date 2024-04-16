@@ -58,3 +58,31 @@ img{
   /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
 }
 
+.about-section {
+  display: grid;
+  place-items: center;
+  margin-top: 5vh;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0 1em;
+}
+

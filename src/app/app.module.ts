@@ -16,6 +16,7 @@ import {FormsModule} from "@angular/forms";
 import {FooterComponent} from "./footer/footer.component";
 import {MasterComponent} from "./master/master.component";
 import {BachelorComponent} from "./bachelor/bachelor.component";
+import {ExperienceComponent} from "./experience/experience.component";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
@@ -46,7 +47,8 @@ const appRoute: Routes = [
     FormsModule,
     FooterComponent,
     MasterComponent,
-    BachelorComponent
+    BachelorComponent,
+    ExperienceComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
