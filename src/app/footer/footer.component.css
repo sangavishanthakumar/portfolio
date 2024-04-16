@@ -1,0 +1,74 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 10%;
+  right: 0%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  transition: all .2s;
+}
+
+a:hover{
+  color: thistle;
+}
+
+h1{
+  /* center this element*/
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5vh;
+  font-family: monospace, sans-serif;
+}
+
+p{
+  font-size: 1.2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+
+}
+
+.icon-bar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 50px 0 0;
+}
+
+.icon-bar li {
+  display: inline-block;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+
+}
+.icon-bar a:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+
+}
+.icon-bar a:hover svg path {
+  fill: thistle;
+  transition: all 0.3s ease;
+}
+
+
+
+img{
+  margin: auto;
+  display: block;
+  width: 15%;
+  height: 50%;
+  border-radius: 50%;
+  /*border: 1px solid white;*/
+  /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+}
+
