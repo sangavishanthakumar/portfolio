@@ -48,15 +48,6 @@ p{
   transition: transform 0.2s ease-in-out;
 }
 
-/*.image{
-  width: 25%;
-  height: 100%;
-  display: flex;
-justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}*/
-
 img{
   margin: auto;
   display: block;
