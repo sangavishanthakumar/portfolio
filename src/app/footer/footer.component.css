@@ -72,3 +72,12 @@ img{
   /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
 }
 
+@media (max-width: 820px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 15%;
+  }
+
+
+}

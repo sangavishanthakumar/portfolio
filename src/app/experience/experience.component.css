@@ -78,3 +78,9 @@ a{
 a:hover{
   color: thistle;
 }
+
+@media (max-width: 820px) {
+  .experience-container {
+    padding: 5px;
+  }
+}
