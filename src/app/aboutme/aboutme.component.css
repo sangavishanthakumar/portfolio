@@ -64,3 +64,20 @@ img{
   /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
 }
 
+@media (max-width: 820px) {
+  .aboutmetext {
+    width: 100%;
+    margin: 0 auto;
+
+    margin-bottom: 50vh;
+  }
+  img{
+    margin: auto;
+    display: block;
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+    /*border: 1px solid white;*/
+    /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+  }
+}
