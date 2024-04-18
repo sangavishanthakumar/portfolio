@@ -7,21 +7,23 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {FooterComponent} from "./footer/footer.component";
+import {MasterComponent} from "./master/master.component";
+import {BachelorComponent} from "./bachelor/bachelor.component";
+import {ExperienceComponent} from "./experience/experience.component";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
   { path: 'home', component: HomeComponent },
   { path: 'aboutme', component: AboutmeComponent },
-  { path: 'skillset', component: SkillsetComponent },
+  { path: 'cv', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }, /* always last */
 ];
@@ -33,18 +35,23 @@ const appRoute: Routes = [
     AboutmeComponent,
     SkillsetComponent,
     ProjectsComponent,
-    ContactComponent,
     ErrorComponent,
+
   ],
-    imports: [
-        BrowserModule,
-        RouterModule.forRoot(appRoute),
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatIconModule,
-        NgOptimizedImage,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoute),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    NgOptimizedImage,
+    FormsModule,
+    FooterComponent,
+    MasterComponent,
+    BachelorComponent,
+    ExperienceComponent,
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
