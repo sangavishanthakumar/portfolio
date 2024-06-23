@@ -29,4 +29,21 @@ export class ProjectsComponent implements OnInit{
     const outputData = outputMap.values().next().value.data;
     this.result = outputData[0];
   }
+
+  enlargeImage(src: string) {
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('img01') as HTMLImageElement;
+    if (modal && modalImg) {
+      modal.style.display = 'block';
+      modalImg.src = src;
+    }
+  }
+
+  closeModal() {
+    const modal = document.getElementById('myModal');
+    if (modal) {
+      modal.style.display = 'none';
+    }
+  }
+
 }
