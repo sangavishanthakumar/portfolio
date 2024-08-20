@@ -17,6 +17,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {MasterComponent} from "./master/master.component";
 import {BachelorComponent} from "./bachelor/bachelor.component";
 import {ExperienceComponent} from "./experience/experience.component";
+import { AppRoutingModule } from './app-routing.module';
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
@@ -50,6 +51,7 @@ const appRoute: Routes = [
     MasterComponent,
     BachelorComponent,
     ExperienceComponent,
+    AppRoutingModule,
 
   ],
   providers: [],
