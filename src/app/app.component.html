@@ -13,9 +13,10 @@
 
     <div [class.active]="showMenu" class="menu-links">
       <ul>
-        <li [routerLinkActive]="'active'">
+        <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">
           <a [routerLink]="['/']" (click)="closeMenu()">Home</a>
         </li>
+
         <li [routerLinkActive]="'active'">
           <a [routerLink]="['/aboutme']" (click)="closeMenu()">About me</a>
         </li>
