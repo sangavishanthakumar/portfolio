@@ -13,10 +13,18 @@
 
     <div [class.active]="showMenu" class="menu-links">
       <ul>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/']">Home</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/aboutme']">About me</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/cv']">Curriculum Vitae</a></li>
-        <li [routerLinkActive]="'active'"><a [routerLink]="['/projects']">Projects</a></li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/']" (click)="closeMenu()">Home</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/aboutme']" (click)="closeMenu()">About me</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/cv']" (click)="closeMenu()">Curriculum Vitae</a>
+        </li>
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="['/projects']" (click)="closeMenu()">Projects</a>
+        </li>
       </ul>
     </div>
   </nav>
