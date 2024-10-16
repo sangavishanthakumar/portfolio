@@ -17,6 +17,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {MasterComponent} from "./master/master.component";
 import {BachelorComponent} from "./bachelor/bachelor.component";
 import {ExperienceComponent} from "./experience/experience.component";
+import {EducationComponent} from "./education/education.component";
 
 const appRoute: Routes = [
   /*{path: '', component: HomeComponent},*/
@@ -24,6 +25,7 @@ const appRoute: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'cv', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'education', component: EducationComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }, /* always last */
 ];
@@ -50,6 +52,7 @@ const appRoute: Routes = [
     MasterComponent,
     BachelorComponent,
     ExperienceComponent,
+    EducationComponent,
 
   ],
   providers: [],
